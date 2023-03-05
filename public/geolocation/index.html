@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="light">
+  <head>
+    <title>Geolocation | Nebula Mods, Inc.</title>
+
+    <!--#region Meta Data-->
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Gelocation" />
+    <meta
+      property="og:url"
+      content="https://nebulamods.ca/geolocation/index.html"
+    />
+    <meta property="og:site_name" content="A Geolocating service!" />
+    <meta name="og:description" content="A Geolocating service!" />
+    <meta
+      name="og:image"
+      content="https://nebulamods.ca/content/images/logo-nebulamods.png"
+    />
+    <meta name="twitter:card" content="summary_small_image" />
+    <meta
+      property="twitter:url"
+      content="https://nebulamods.ca/geolocation/index.html"
+    />
+    <meta
+      name="twitter:image"
+      content="https://nebulamods.ca/content/images/logo-nebulamods.png"
+    />
+    <meta name="twitter:description" content="A Geolocating service!" />
+    <meta name="description" content="A Geolocating service!" />
+    <meta name="theme-color" content="#3d68ff" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="window-target" content="_top" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Nebula" />
+    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="https://nebulamods.ca/content/images/logo-128.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://nebulamods.ca/content/images/logo-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://nebulamods.ca/content/images/logo-16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="https://nebulamods.ca/content/images/logo-nebulamods.png"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://nebulamods.ca/favicon.ico"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Font Awesome if you need it
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./tailwind.css" />
+    <!--Replace with your tailwind.css once created-->
+  </head>
+
+  <body
+    class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover bg-gradient-to-r from-teal-200 to-teal-500"
+  >
+    <div
+      class="max-w-4xl flex lg:justify-center items-center h-auto lg:h-full flex-wrap mx-auto my-32 lg:my-1/4"
+    >
+      <!--Main Col-->
+      <div
+        id="ipAddyDiv"
+        class="theme w-full lg:w-full rounded-lg lg:rounded-l-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 -mb-8"
+      >
+        <div class="pb-2 pr-4 pt-2 pl-4 md:p-10 text-center">
+          <form id="ipAddressInput" class="inline" onsubmit="return false">
+            <input
+              class="bg-white text-3xl font-bold pt-8 lg:pt-0 appearance-none w-full py-2 text-center px-3 leading-tight focus:outline-none focus:shadow-outline"
+              id="ipAddy"
+              type="text"
+              required
+              name="ipAddy"
+              aria-label="IP Address"
+              placeholder="IP Address"
+            />
+            <div
+              class="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-green-500 opacity-25"
+            ></div>
+            <button
+              class="mt-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+              onclick="javascript:Geolocate(document.getElementById('ipAddy').value);"
+            >
+              Geolocate
+            </button>
+          </form>
+        </div>
+      </div>
+      <!--Combining Div-->
+      <!-- <div class="flex items-center justify-center text-center w-screen">
+
+      </div> -->
+      <!--Network Col-->
+      <div
+        id="network"
+        class="theme w-full lg:w-2/5 rounded-lg lg:rounded-l-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 mt-10 lg:mr-1"
+      >
+        <div class="pb-2 pr-4 pt-2 pl-4 md:p-12 text-center">
+          <!-- Image for mobile view-->
+          <!-- <div
+				class="block lg:hidden mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+				style="
+				  background-image: url('https://cdn.ipregistry.co/flags/noto/us.png');
+				"
+			  ></div> -->
+          <h3 class="text-3xl font-bold pt-8 lg:pt-0">Network</h3>
+          <div
+            class="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-green-500 opacity-25"
+          ></div>
+          <ul class="text-left">
+            <li class="mt-2">IP Address: N/A</li>
+            <li>Hostname: N/A</li>
+            <li>Type: N/A</li>
+            <li>Organization: N/A</li>
+            <li>ISP: N/A</li>
+            <li>Domain: N/A</li>
+            <li>AS Number: N/A</li>
+            <li>As Name: N/A</li>
+            <li>Route: N/A</li>
+          </ul>
+          <!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
+        </div>
+      </div>
+      <!--Location Col-->
+      <div
+        id="location"
+        class="theme w-full lg:w-2/5 rounded-lg lg:rounded-l-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 mt-10 lg:ml-1"
+      >
+        <div class="pb-2 pr-4 pt-2 pl-4 md:p-12 text-center">
+          <!-- Image for mobile view-->
+          <!-- <div
+					class="block lg:hidden mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+					style="
+					  background-image: url('https://cdn.ipregistry.co/flags/noto/us.png');
+					"
+				  ></div> -->
+          <h3 class="text-3xl font-bold pt-8 lg:pt-0">Location</h3>
+          <div
+            class="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-green-500 opacity-25"
+          ></div>
+          <ul class="text-left">
+            <li class="mt-2">Country: N/A</li>
+            <li>Region: N/A</li>
+            <li>District: N/A</li>
+            <li>City: N/A</li>
+          </ul>
+          <div class="pt-1 items-center flex justify-center">
+            <img
+              alt="flag"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhBwrGri-0g4UHZbQPWt42QIWLoNDnnAPQJB_mGr4kA8KPpl5ikBu3v-Se4Ibw8jHFtwU&usqp=CAU"
+              id="flagImg"
+            />
+          </div>
+          <!--flag here-->
+          <!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
+        </div>
+      </div>
+      <div
+        id="extras"
+        class="theme w-full lg:w-2/5 rounded-lg lg:rounded-l-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 mt-10 lg:ml-1 hidden"
+      >
+        <div class="p-4 md:p-12 text-center">
+          <!-- Image for mobile view-->
+          <!-- <div
+				  class="block lg:hidden mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+				  style="
+					background-image: url('https://cdn.ipregistry.co/flags/noto/us.png');
+				  "
+				></div> -->
+          <h3 class="text-3xl font-bold pt-8 lg:pt-0">Extra Details</h3>
+          <div
+            class="mx-auto lg:mx-0 w-full pt-3 border-b-2 border-green-500 opacity-25"
+          ></div>
+          <ul class="text-left">
+            <li class="mt-2">Attacker: N/A</li>
+            <li>Abuser: N/A</li>
+            <li>Proxy: N/A</li>
+            <li>Tor: N/A</li>
+            <li>Annonymous: N/A</li>
+            <li>Cloud Provider: N/A</li>
+            <li>Bogon: N/A</li>
+            <li>Relay: N/A</li>
+            <li>Tor Exit: N/A</li>
+            <li>Response Time: N/A</li>
+          </ul>
+          <!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
+        </div>
+      </div>
+      <!--Img Col-->
+      <!-- Big ipAddyDiv image for side bar (desktop) -->
+      <!-- <div class="w-full lg:w-2/5">
+        <img
+          src="https://cdn.ipregistry.co/flags/noto/us.png"
+          class="rounded-none lg:rounded-lg hidden lg:block"
+        />
+      </div> -->
+
+      <!-- Pin to top right corner -->
+      <div class="absolute top-0 right-20 h-12 w-18 p-4">
+        <button class="js-toggle-info focus:outline-none">ℹ️</button>
+      </div>
+      <div class="absolute top-0 right-10 h-12 w-18 p-4">
+        <button class="js-change-token focus:outline-none">🔓</button>
+      </div>
+      <div class="absolute top-0 right-0 h-12 w-18 p-4">
+        <button class="js-change-theme focus:outline-none">🌙</button>
+      </div>
+      <!-- Pin to top left corner -->
+      <div class="flex absolute top-0 left-0 h-12 w-18 p-4">
+        <img
+          style="height: 3em; width: 3em"
+          class="mr-2"
+          src="https://nebulamods.ca/favicon.ico"
+        />
+        <h3 id="companyTitle" class="mt-3 font-bold text-gray-900">
+          Nebula Mods, Inc.
+        </h3>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <script src="./geolocate.js" async></script>
+    <script>
+      //Init tooltips
+      tippy(".link", {
+        placement: "bottom",
+      });
+
+      //Toggle mode
+
+      const toggle = document.querySelector(".js-change-theme");
+      const body = document.querySelector("body");
+      const input = document.querySelector("input");
+      const themedDivs = document.querySelectorAll(".theme");
+      const isDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (isDarkMode) {
+        toggle.innerHTML = "☀️";
+        body.classList.remove("text-gray-900");
+        body.classList.add("text-gray-100");
+        input.classList.remove("bg-white");
+        input.classList.add("bg-gray-900");
+        themedDivs.forEach((div) => {
+          div.classList.remove("bg-white");
+          div.classList.add("bg-gray-900");
+        });
+        // remove scrollbars
+        document.documentElement.style.overflow = "hidden";
+        // trigger reflow so that overflow style is applied
+        document.body.clientWidth;
+        // change scheme
+        document.documentElement.setAttribute("data-color-scheme", "dark");
+        // remove overflow style, which will bring back the scrollbar with the correct scheme
+        document.documentElement.style.overflow = "";
+      }
+
+      toggle.addEventListener("click", () => {
+        if (body.classList.contains("text-gray-900")) {
+          toggle.innerHTML = "☀️";
+          body.classList.remove("text-gray-900");
+          body.classList.add("text-gray-100");
+          input.classList.remove("bg-white");
+          input.classList.add("bg-gray-900");
+          themedDivs.forEach((div) => {
+            div.classList.remove("bg-white");
+            div.classList.add("bg-gray-900");
+          });
+          // remove scrollbars
+          document.documentElement.style.overflow = "hidden";
+          // trigger reflow so that overflow style is applied
+          document.body.clientWidth;
+          // change scheme
+          document.documentElement.setAttribute("data-color-scheme", "dark");
+          // remove overflow style, which will bring back the scrollbar with the correct scheme
+          document.documentElement.style.overflow = "";
+        } else {
+          toggle.innerHTML = "🌙";
+          body.classList.remove("text-gray-100");
+          body.classList.add("text-gray-900");
+          input.classList.remove("bg-gray-900");
+          input.classList.add("bg-white");
+          themedDivs.forEach((div) => {
+            div.classList.remove("bg-gray-900");
+            div.classList.add("bg-white");
+          });
+          // remove scrollbars
+          document.documentElement.style.overflow = "hidden";
+          // trigger reflow so that overflow style is applied
+          document.body.clientWidth;
+          // change scheme
+          document.documentElement.setAttribute("data-color-scheme", "light");
+          // remove overflow style, which will bring back the scrollbar with the correct scheme
+          document.documentElement.style.overflow = "";
+        }
+      });
+    </script>
+    <script>
+      //Init tooltips
+      tippy(".link", {
+        placement: "bottom",
+      });
+
+      //Toggle mode
+      const authToggle = document.querySelector(".js-change-token");
+
+      authToggle.addEventListener("click", () => {
+        if (authToggle.innerHTML == "🔓") {
+          //do popup
+          let token = window.prompt("Please enter your API Token:");
+          if (token != null) {
+            window.localStorage.setItem("Authorization", token);
+            //set token in session/local storage
+            authToggle.innerHTML = "🔒";
+          }
+        } else {
+          authToggle.innerHTML = "🔓";
+          //delete local/session storage
+          window.localStorage.clear();
+        }
+      });
+    </script>
+    <script>
+      const infoToggle = document.querySelector(".js-toggle-info");
+      const toggleDiv = document.getElementById("extras");
+
+      infoToggle.addEventListener("click", function () {
+        toggleDiv.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
