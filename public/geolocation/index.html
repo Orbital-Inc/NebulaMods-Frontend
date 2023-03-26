@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" data-color-scheme="light">
+<html lang="en" data-color-scheme="">
   <head>
     <title>Geolocation | Nebula Mods, Inc.</title>
 
     <!--#region Meta Data-->
     <meta charset="UTF-8" />
-    <meta property="og:title" content="Gelocation" />
-    <meta
-      property="og:url"
-      content="https://nebulamods.ca/geolocation/index.html"
-    />
-    <meta property="og:site_name" content="A Geolocating service!" />
+    <meta property="og:title" content="Geolocation | Nebula Mods, Inc." />
+    <meta property="og:url" content="https://nebulamods.ca/geolocation/" />
+    <meta property="og:site_name" content="A dank Geo service!" />
     <meta name="og:description" content="A Geolocating service!" />
     <meta
       name="og:image"
       content="https://nebulamods.ca/content/images/logo-nebulamods.png"
     />
     <meta name="twitter:card" content="summary_small_image" />
-    <meta
-      property="twitter:url"
-      content="https://nebulamods.ca/geolocation/index.html"
-    />
+    <meta property="twitter:url" content="https://nebulamods.ca/geolocation/" />
     <meta
       name="twitter:image"
       content="https://nebulamods.ca/content/images/logo-nebulamods.png"
@@ -34,6 +28,8 @@
     <meta name="author" content="Nebula" />
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./geolocate.js" async defer></script>
+
     <link
       rel="apple-touch-icon"
       sizes="128x128"
@@ -73,6 +69,8 @@
       href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
     <link rel="stylesheet" href="./tailwind.css" />
+    <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
     <!--Replace with your tailwind.css once created-->
   </head>
 
@@ -80,12 +78,12 @@
     class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover bg-gradient-to-r from-teal-200 to-teal-500"
   >
     <div
-      class="max-w-4xl flex lg:justify-center items-center h-auto lg:h-full flex-wrap mx-auto my-32 lg:my-1/4"
+      class="max-w-4xl flex lg:justify-center items-center h-auto lg:h-full flex-wrap mx-auto mt-32"
     >
       <!--Main Col-->
       <div
         id="ipAddyDiv"
-        class="theme w-full lg:w-full rounded-lg lg:rounded-l-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 -mb-8"
+        class="theme w-full lg:w-full rounded-lg lg:rounded-l-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
       >
         <div class="pb-2 pr-4 pt-2 pl-4 md:p-10 text-center">
           <form id="ipAddressInput" class="inline" onsubmit="return false">
@@ -111,16 +109,16 @@
           </form>
         </div>
       </div>
-      <!--Combining Div-->
-      <!-- <div class="flex items-center justify-center text-center w-screen">
-
-      </div> -->
+    </div>
+    <div
+      class="flex lg:justify-center items-center h-auto lg:h-full flex-wrap mx-auto mb-16"
+    >
       <!--Network Col-->
       <div
         id="network"
         class="theme w-full lg:w-2/5 rounded-lg lg:rounded-l-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 mt-10 lg:mr-1"
       >
-        <div class="pb-2 pr-4 pt-2 pl-4 md:p-12 text-center">
+        <div class="p-4 md:p-12 text-center">
           <!-- Image for mobile view-->
           <!-- <div
 				class="block lg:hidden mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
@@ -149,9 +147,9 @@
       <!--Location Col-->
       <div
         id="location"
-        class="theme w-full lg:w-2/5 rounded-lg lg:rounded-l-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 mt-10 lg:ml-1"
+        class="theme w-full lg:w-2/5 rounded-lg lg:rounded-l-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 mt-10 lg:mr-1"
       >
-        <div class="pb-2 pr-4 pt-2 pl-4 md:p-12 text-center">
+        <div class="p-4 md:p-12 text-center">
           <!-- Image for mobile view-->
           <!-- <div
 					class="block lg:hidden mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
@@ -180,6 +178,7 @@
           <!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
         </div>
       </div>
+      <!--Extras-->
       <div
         id="extras"
         class="theme w-full lg:w-2/5 rounded-lg lg:rounded-l-lg shadow-2xl bg-white opacity-75 mx-6 lg:mx-0 mt-10 lg:ml-1 hidden"
@@ -211,14 +210,6 @@
           <!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
         </div>
       </div>
-      <!--Img Col-->
-      <!-- Big ipAddyDiv image for side bar (desktop) -->
-      <!-- <div class="w-full lg:w-2/5">
-        <img
-          src="https://cdn.ipregistry.co/flags/noto/us.png"
-          class="rounded-none lg:rounded-lg hidden lg:block"
-        />
-      </div> -->
 
       <!-- Pin to top right corner -->
       <div class="absolute top-0 right-20 h-12 w-18 p-4">
@@ -242,10 +233,6 @@
         </h3>
       </div>
     </div>
-
-    <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@4"></script>
-    <script src="./geolocate.js" async></script>
     <script>
       //Init tooltips
       tippy(".link", {
@@ -350,10 +337,174 @@
     <script>
       const infoToggle = document.querySelector(".js-toggle-info");
       const toggleDiv = document.getElementById("extras");
-
+      const networkDiv = document.getElementById("network");
+      const locationDiv = document.getElementById("location");
       infoToggle.addEventListener("click", function () {
         toggleDiv.classList.toggle("hidden");
+        if (toggleDiv.classList.contains("hidden")) {
+          toggleDiv.classList.replace("lg:w-1:3", "lg:w-2/5");
+          networkDiv.classList.replace("lg:w-1:3", "lg:w-2/5");
+          locationDiv.classList.replace("lg:w-1:3", "lg:w-2/5");
+          return;
+        }
+        toggleDiv.classList.replace("lg:w-2/5", "lg:w-1:3");
+        networkDiv.classList.replace("lg:w-2/5", "lg:w-1:3");
+        locationDiv.classList.replace("lg:w-2/5", "lg:w-1:3");
       });
+    </script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        //check if url contains ip if so then geolocate that
+        CheckToken();
+        // Get the URLSearchParams object
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams != null) {
+          // Get the value of a parameter with a specified name
+          const paramValue = urlParams.get("ip");
+          if (paramValue != null) {
+            Geolocate(paramValue);
+            return;
+          }
+        }
+        Test();
+      });
+      function Test() {
+        //temp until i update the api to support /me
+        const XHR = new XMLHttpRequest();
+        XHR.addEventListener("load", (event) => {
+          let data = JSON.parse(event.target.responseText);
+          if (data.ip == null || data.ip == "") {
+            console.log(event.target.responseText);
+            return;
+          }
+          Geolocate(data.ip);
+        });
+        XHR.addEventListener("error", (event) => {
+          console.log(event.target.responseText);
+        });
+        XHR.open("GET", "https://api64.ipify.org/?format=json");
+        XHR.send();
+      }
+      function CheckToken() {
+        let token = window.localStorage.getItem("Authorization");
+        if (token == null || token == "") {
+          return;
+        }
+        const authToggle = document.querySelector(".js-change-token");
+        authToggle.innerHTML = "🔒";
+      }
+      function Geolocate(ip) {
+        if (ip == null || ip == "") return;
+        const XHR = new XMLHttpRequest();
+
+        XHR.addEventListener("load", (event) => {
+          let data = JSON.parse(event.target.responseText);
+          if (data.success != null) {
+            alert(data.details);
+            return;
+          }
+          // Clear the URL parameters without reloading the page
+          history.pushState({}, document.title, window.location.pathname);
+          //console.log(data);
+          //#region Setting Data
+          const extraElems = document.querySelectorAll("#extras li");
+          const locationElems = document.querySelectorAll("#location li");
+          const networkElems = document.querySelectorAll("#network li");
+          document.getElementById("flagImg").src = data.flag;
+          const ipAddy = document.getElementById("ipAddy");
+          if (ipAddy.value == "" || ipAddy.value == null) {
+            ipAddy.value = data.ip;
+          }
+          networkElems[0].textContent = `IP Address: ${
+            data.ip == null ? "N/A" : data.ip
+          }`;
+          networkElems[1].textContent = `Hostname: ${
+            data.hostname == null ? "N/A" : data.hostname
+          }`;
+          networkElems[2].textContent = `Type: ${
+            data.type == null ? "N/A" : data.type
+          }`;
+          networkElems[3].textContent = `Organization: ${
+            data.organization == null ? "N/A" : data.organization
+          }`;
+          networkElems[4].textContent = `ISP: ${
+            data.isp == null ? "N/A" : data.isp
+          }`;
+          networkElems[5].textContent = `Domain: ${
+            data.domain == null ? "N/A" : data.domain
+          }`;
+          networkElems[6].textContent = `AS Number: ${
+            data.asnNumber == null ? "N/A" : data.asnNumber
+          }`;
+          networkElems[7].textContent = `AS Name: ${
+            data.asnName == null ? "N/A" : data.asnName
+          }`;
+          networkElems[8].textContent = `Route: ${
+            data.route == null ? "N/A" : data.route
+          }`;
+          locationElems[0].textContent = `Country: ${
+            data.country == null ? "N/A" : data.country
+          }`;
+          locationElems[1].textContent = `Region: ${
+            data.region == null ? "N/A" : data.region
+          }`;
+          locationElems[2].textContent = `District: ${
+            data.district == null ? "N/A" : data.district
+          }`;
+          locationElems[3].textContent = `City: ${
+            data.city == null ? "N/A" : data.city
+          }`;
+          extraElems[0].textContent = `Attacker: ${
+            data.attacker == null ? "N/A" : data.attacker
+          }`;
+          extraElems[1].textContent = `Abuser: ${
+            data.abuser == null ? "N/A" : data.abuser
+          }`;
+          extraElems[2].textContent = `Proxy: ${
+            data.proxy == null ? "N/A" : data.proxy
+          }`;
+          extraElems[3].textContent = `Tor: ${
+            data.tor == null ? "N/A" : data.tor
+          }`;
+          extraElems[4].textContent = `Annonymous: ${
+            data.annonymous == null ? "N/A" : data.annonymous
+          }`;
+          extraElems[5].textContent = `Cloud Provider: ${
+            data.cloudProvider == null ? "N/A" : data.cloudProvider
+          }`;
+          extraElems[6].textContent = `Bogon: ${
+            data.bogon == null ? "N/A" : data.bogon
+          }`;
+          extraElems[7].textContent = `Relay: ${
+            data.relay == null ? "N/A" : data.relay
+          }`;
+          extraElems[8].textContent = `Tor Exit: ${
+            data.torExit == null ? "N/A" : data.torExit
+          }`;
+          extraElems[9].textContent = `Response Time: ${
+            data.responseTime == null ? "N/A" : data.responseTime
+          }`;
+          //#endregion
+        });
+        XHR.addEventListener("error", (event) => {
+          console.log(event.target.responseText);
+          alert(
+            "An error occurred, if this continues to occur please contact an admin."
+          );
+        });
+        XHR.open("GET", `https://api.nebulamods.ca/network/geolocation/${ip}`);
+        //get token from local/session storage
+        let token = window.localStorage.getItem("Authorization");
+        if (token == null || token == "") {
+          token =
+            "eRk6Uf6XmTlDqdaYAd3q+R6RPugGLabPE0YEcv1Oy9F7Y/zcTaNMoXU+vjOT49u/wJZj3ZA+IcB7pWnFgvERczVGY9ODw7pthLMmorWW3wJPFZhQ6/QyL13At+7VVbXDhHTMkLafHjiFMHjogSyDFuE6722VCjbQ6tBqsOHi3Kc88JNu+9RkeBLh1s7JZtH5LQBCn363oyW+O8SnEgt4Igz2Xj5+yMxBRfkFpdFbLXB2gWbRCchxRYdyE/jbMZgPPJOfW2TqXe0rfNxUhvvovg==";
+        }
+        XHR.setRequestHeader("Authorization", token);
+        if (token == "some free token?????" || token == "" || token == null) {
+          return;
+        }
+        XHR.send();
+      }
     </script>
   </body>
 </html>
