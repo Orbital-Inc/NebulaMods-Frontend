@@ -1,0 +1,61 @@
+.carousel img,
+.showcase-carousel img {
+  display: none;
+  max-height: 960px; /* Set your desired max height */
+  width: auto;
+  margin: 0 auto;
+}
+.carousel img.active,
+.showcase-carousel img.active {
+  display: block;
+}
+.carousel p,
+.showcase-carousel p {
+  display: none;
+}
+.carousel p.active,
+.showcase-carousel p.active {
+  display: block;
+}
+.scrollable-list {
+  max-height: 400px; /* Adjust as needed */
+  overflow-y: auto;
+  border: 2px solid #4a5568; /* Change to a better color */
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #1a202c; /* Match the site's background */
+}
+.scrollable-list ul {
+  list-style: none;
+  padding: 0;
+}
+.scrollable-list li {
+  margin: 5px 0;
+  text-align: center;
+}
+.scrollable-list a {
+  color: #63b3ed; /* Change to a better color */
+  text-decoration: none;
+  font-weight: bold;
+}
+.scrollable-list a:hover {
+  text-decoration: underline;
+}
+/* Custom scrollbar styles */
+.scrollable-list::-webkit-scrollbar,
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollable-list::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: #2d3748; /* Darker background for the track */
+}
+.scrollable-list::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: #4a5568; /* Change to a better color */
+  border-radius: 10px;
+  border: 2px solid #2d3748; /* Match the track background */
+}
