@@ -39,68 +39,207 @@
   </script>
   <body class="bg-gray-900 text-white">
     <div class="container mx-auto p-4">
-      <h1 class="text-4xl text-center mb-8">Nebula Mods</h1>
-
+      <h1 class="text-4xl text-center mb-4">Nebula Mods</h1>
+      <p class="text-center mb-4">
+        A site mainly for modding content, but home to some other random
+        projects/services/downloads.
+      </p>
+      <!-- Social Links -->
       <div class="text-center mb-4">
         <a
           href="https://instagram.com/nebulamods"
-          class="mx-2 text-blue-400 inline-flex items-center"
+          class="mx-2 inline-flex items-center"
           target="_blank"
         >
-          <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg"
-            alt="Instagram"
-            class="w-6 h-6 mr-2"
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-instagram icon-color-fade mr-1"
+          >
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37a4 4 0 1 1-7.9 1.37 4 4 0 0 1 7.9-1.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+          </svg>
           Instagram
         </a>
         <a
           href="https://discord.gg/datapacket"
-          class="mx-2 text-blue-400 inline-flex items-center"
+          class="mx-2 inline-flex items-center"
           target="_blank"
         >
-          <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/discord.svg"
-            alt="Discord"
-            class="w-6 h-6 mr-2"
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-discord icon-color-fade mr-1"
+          >
+            <path
+              d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.385-.444.885-.61 1.279a18.704 18.704 0 0 0-5.627 0 12.836 12.836 0 0 0-.617-1.279.074.074 0 0 0-.079-.037c-1.682.3-3.317.808-4.885 1.515a.07.07 0 0 0-.032.027C1.29 9.764.624 14.065.985 18.329a.083.083 0 0 0 .031.056 19.94 19.94 0 0 0 5.996 3.037.079.079 0 0 0 .084-.027c.463-.63.876-1.3 1.238-2.008a.076.076 0 0 0-.04-.103 12.97 12.97 0 0 1-1.858-.885.078.078 0 0 1-.008-.13 9.359 9.359 0 0 0 .372-.291.073.073 0 0 1 .077-.01c3.91 1.772 8.17 1.772 12.062 0a.073.073 0 0 1 .078.01c.119.1.247.206.372.291a.078.078 0 0 1-.006.13 13.015 13.015 0 0 1-1.86.885.076.076 0 0 0-.039.103c.371.707.784 1.378 1.237 2.008a.078.078 0 0 0 .084.027 19.909 19.909 0 0 0 6.001-3.037.083.083 0 0 0 .03-.056c.518-5.398-.866-9.665-3.363-13.933a.067.067 0 0 0-.032-.027z"
+            ></path>
+            <path
+              d="M8.02 15.496c-1.17 0-2.116-1.073-2.116-2.385 0-1.312.935-2.386 2.116-2.386 1.187 0 2.125 1.074 2.11 2.386 0 1.312-.935 2.385-2.11 2.385zm7.956 0c-1.17 0-2.116-1.073-2.116-2.385 0-1.312.935-2.386 2.116-2.386 1.187 0 2.126 1.074 2.11 2.386 0 1.312-.935 2.385-2.11 2.385z"
+            ></path>
+          </svg>
           Discord
         </a>
         <a
           href="https://github.com/nebulamods"
-          class="mx-2 text-blue-400 inline-flex items-center"
+          class="mx-2 inline-flex items-center"
           target="_blank"
         >
-          <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg"
-            alt="GitHub"
-            class="w-6 h-6 mr-2"
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-github icon-color-fade mr-1"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3M16 22v-2.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1s-1.18-.38-3.87 1.44a13.38 13.38 0 0 0-7.06 0C6.18.62 5 1 5 1a5.07 5.07 0 0 0-.09 3.73A5.44 5.44 0 0 0 3.5 11.5c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 0 0-.94 2.6V22"
+            ></path>
+          </svg>
           GitHub
         </a>
+      </div>
+
+      <!-- Orbital Logo -->
+      <div class="text-center mb-8">
         <a
           href="https://orbitalsolutions.ca"
-          class="mx-2 text-blue-400 inline-flex items-center"
+          class="mx-2 inline-flex items-center"
           target="_blank"
         >
           <img
-            src="https://orbitalsolutions.ca/assets/img/orbital-logo-48.png"
+            src="./assets/img/orbital-cropped.gif"
             alt="Orbital, Inc."
-            class="w-6 h-6 mr-2"
+            class="w-1/2 h-1/2 items-center mx-auto"
           />
-          Orbital, Inc.
         </a>
       </div>
-      <div class="text-center mb-8">
-        <img
-          src="./assets/img/showcase/xbO.png"
-          alt="XbOnline"
-          class="w-2/3 mx-auto max-w-md max-hmd"
-        />
+      <!-- Services-->
+      <!-- Display multiple cards in a row of different services with a logo, title, and small description using tailwind css -->
+      <h2 class="text-3xl text-center mb-4">Services</h2>
+      <div
+        class="services mx-auto w-full md:w-2/3 mb-8 flex flex-col md:flex-row md:flex-wrap justify-center"
+      >
+        <div
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+        >
+          <a href="https://xbonline.live" target="_blank">
+            <img
+              src="./assets/img/showcase/xbO.png"
+              alt="XbOnline"
+              class="mx-auto mb-4"
+            />
+            <h3 class="text-2xl text-center mb-2">XbOnline</h3>
+            <p class="text-center">
+              The #1 leading Xbox 360 stealth service for JTAG/RGH consoles.
+              Contact me for more information on how to gain access.
+            </p>
+          </a>
+        </div>
+        <div
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+        >
+          <a href="https://armoredvm.com" target="_blank">
+            <img
+              src="./assets/img/services/avm_email.png"
+              alt="AVM"
+              class="mx-auto mb-4"
+            />
+            <h3 class="text-2xl text-center mb-2">ArmoredVM</h3>
+            <p class="text-center">
+              The ultimate VPS hosting service for all of your needs.
+              Specializing in DDoS protection and high performance for low
+              prices.
+            </p>
+          </a>
+        </div>
+        <div
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+        >
+          <a href="https://psychocoding.net" target="_blank">
+            <img
+              src="https://psychocoding.net/dist/img/Logo.png"
+              alt="PsychoSolutions"
+              class="mx-auto mb-4"
+            />
+            <h3 class="text-2xl text-center mb-2">PsychoSolutions</h3>
+            <p class="text-center">
+              The best Xbox IP database &amp; Xbox tools available. With over 5
+              million entries, and tons of Xbox features.
+            </p>
+          </a>
+        </div>
+        <div
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+        >
+          <a href="https://kennedyportal.org" target="_blank">
+            <img
+              src="./assets/img/services/brr.png"
+              alt="Movies/Tv Shows"
+              class="mx-auto mb-4"
+            />
+            <h3 class="text-2xl text-center mb-2">Movies/TV Shows</h3>
+            <p class="text-center">
+              The best place to watch movies and TV shows for free. With over
+              1800 movies and 240 TV shows, with new content added daily. You
+              will never run out of things to watch again.
+            </p>
+          </a>
+        </div>
+        <div
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+        >
+          <a href="#" target="_blank">
+            <img
+              src="./assets/img/banner-nebula-mods.png"
+              alt="N/A"
+              class="mx-auto mb-4"
+            />
+            <h3 class="text-2xl text-center mb-2">Contact Me</h3>
+            <p class="text-center">
+              Want your service to be showcased here? Contact me for details.
+            </p>
+          </a>
+        </div>
+        <div
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+        >
+          <a href="#" target="_blank">
+            <img
+              src="./assets/img/banner-nebula-mods.png"
+              alt="N/A"
+              class="mx-auto mb-4"
+            />
+            <h3 class="text-2xl text-center mb-2">Contact Me</h3>
+            <p class="text-center">
+              Want your service to be showcased here? Contact me for details.
+            </p>
+          </a>
+        </div>
       </div>
 
       <h2 class="text-3xl text-center mb-4">Showcase</h2>
-      <div class="showcase-carousel mx-auto w-2/3">
+      <div class="showcase-carousel mx-auto w-full md:w-2/3">
         <!-- Showcase images will be dynamically added here -->
       </div>
 
@@ -112,14 +251,14 @@
           happens if you use these files/sources.
         </p>
       </div>
-      <div class="scrollable-list mx-auto w-2/3 mb-8">
+      <div class="scrollable-list mx-auto w-full md:w-2/3 mb-8">
         <ul id="tool-links">
           <!-- Links will be dynamically added here -->
         </ul>
       </div>
 
       <h2 class="text-3xl text-center mb-4">Download Xexs</h2>
-      <div class="scrollable-list mx-auto w-2/3 mb-8">
+      <div class="scrollable-list mx-auto w-full md:w-2/3 mb-8">
         <ul id="xex-links">
           <!-- Links will be dynamically added here-->
         </ul>
@@ -129,13 +268,20 @@
       </div> -->
 
       <h2 class="text-3xl text-center mb-4">Download Sources</h2>
-      <div class="scrollable-list mx-auto w-2/3 mb-8">
+      <div class="scrollable-list mx-auto w-full md:w-2/3 mb-8">
         <ul id="source-links">
           <!-- Links will be dynamically added here -->
         </ul>
       </div>
 
-      <div class="carousel mx-auto w-2/3 mb-8">
+      <h2 class="text-3xl text-center mb-4">Download Random Stuff</h2>
+      <div class="scrollable-list mx-auto w-full md:w-2/3 mb-8">
+        <ul id="random-links">
+          <!-- Links will be dynamically added here -->
+        </ul>
+      </div>
+
+      <div class="carousel mx-auto w-full md:w-2/3 mb-8">
         <!-- Carousel images will be dynamically added here -->
       </div>
     </div>

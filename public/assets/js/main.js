@@ -1439,6 +1439,26 @@ document.addEventListener("DOMContentLoaded", function () {
     sourceLinksContainer.appendChild(listItem);
   });
 
+  const sourceRandomStuff = [
+    {
+      image: "",
+      downloadLink: "",
+    },
+  ];
+
+  const sourceRandomStuffContainer = document.getElementById("random-links");
+  sourceRandomStuff.forEach((imageData) => {
+    const listItem = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = imageData.downloadLink;
+    link.textContent = imageData.image;
+    link.classList.add("text-blue-400", "hover:underline");
+    link.setAttribute("download", imageData.downloadLink.split("/").pop());
+    link.setAttribute("type", (type = "application/x-rar-compressed"));
+    listItem.appendChild(link);
+    sourceRandomStuffContainer.appendChild(listItem);
+  });
+
   const showcaseImages = [
     "40gbps speedtest.png",
     "75-0 Pub TDM.jpg",
@@ -1489,4 +1509,21 @@ document.addEventListener("DOMContentLoaded", function () {
     showcaseImages.map((image) => ({ image })),
     false
   );
+
+  const icons = document.querySelectorAll(".icon-color-fade");
+  const colors = ["red", "green", "blue", "purple", "orange", "yellow"];
+
+  function cycleColors(icon, index = 0) {
+    icon.style.transition = "fill 1s ease-in-out";
+    icon.style.fill = colors[index];
+
+    setTimeout(() => {
+      const nextIndex = (index + 1) % colors.length;
+      cycleColors(icon, nextIndex);
+    }, 1000); // Adjust this duration to control the speed of the color change
+  }
+
+  icons.forEach((icon) => {
+    cycleColors(icon);
+  });
 });

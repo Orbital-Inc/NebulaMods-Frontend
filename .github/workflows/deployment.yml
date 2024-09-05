@@ -1,0 +1,47 @@
+# name: Deploy to Debian Server
+
+# on:
+#   push:
+#     branches:
+#       - master
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+
+#       - name: Generate version tag
+#         id: vars
+#         run: echo "VERSION=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
+
+#       - name: Deploy
+#         uses: appleboy/ssh-action@master
+#         with:
+#           host: ${{ secrets.HOST }}
+#           username: ${{ secrets.USERNAME }}
+#           key: ${{ secrets.SSH_KEY }}
+#           script: |
+#             VERSION=${{ env.VERSION }}
+#             DEPLOY_DIR="/var/www/html/releases/$VERSION"
+
+#             # Create versioned directory
+#             sudo mkdir -p $DEPLOY_DIR
+
+#             # Copy files to the versioned directory
+#             sudo rsync -av --exclude='.git' ./ $DEPLOY_DIR/
+
+#             # Update symbolic link
+#             sudo ln -sfn $DEPLOY_DIR /var/www/html/current
+
+#             # Optionally update Nginx config (if needed)
+#             # sudo sed -i 's|root /var/www/html/current;|root /var/www/html/current;|' /etc/nginx/sites-available/default
+
+#             # Restart Nginx to apply changes
+#             sudo systemctl restart nginx
+
+#             # Optional: Clean up old releases (keep the last 5 versions)
+#             cd /var/www/html/releases/
+#             sudo ls -t | tail -n +6 | xargs sudo rm -rf
