@@ -138,10 +138,10 @@
       <!-- Display multiple cards in a row of different services with a logo, title, and small description using tailwind css -->
       <h2 class="text-3xl text-center mb-4">Services</h2>
       <div
-        class="services mx-auto w-full md:w-2/3 mb-8 flex flex-col md:flex-row md:flex-wrap justify-center"
+        class="services mx-auto w-full mb-8 flex flex-col md:flex-row md:flex-wrap justify-center"
       >
         <div
-          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 md:mx-2"
         >
           <a href="https://xbonline.live" target="_blank">
             <img
@@ -157,7 +157,7 @@
           </a>
         </div>
         <div
-          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 md:mx-2"
         >
           <a href="https://armoredvm.com" target="_blank">
             <img
@@ -174,7 +174,7 @@
           </a>
         </div>
         <div
-          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 md:mx-2"
         >
           <a href="https://psychocoding.net" target="_blank">
             <img
@@ -190,24 +190,24 @@
           </a>
         </div>
         <div
-          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 md:mx-2"
         >
           <a href="https://kennedyportal.org" target="_blank">
             <img
               src="./assets/img/services/brr.png"
               alt="Movies/Tv Shows"
-              class="mx-auto mb-4"
+              class="mx-auto mb-4 w-1/3 h-1/3 mb:w-full mb:h-full"
             />
             <h3 class="text-2xl text-center mb-2">Movies/TV Shows</h3>
             <p class="text-center">
               The best place to watch movies and TV shows for free. With over
-              1800 movies and 240 TV shows, with new content added daily. You
+              1900 movies and 250 TV shows, with new content added daily. You
               will never run out of things to watch again.
             </p>
           </a>
         </div>
         <div
-          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 md:mx-2"
         >
           <a href="#" target="_blank">
             <img
@@ -222,7 +222,7 @@
           </a>
         </div>
         <div
-          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 mx-2"
+          class="service-card bg-gray-800 p-4 rounded-lg shadow-lg mb-4 w-full md:w-1/2 lg:w-1/4 md:mx-2"
         >
           <a href="#" target="_blank">
             <img
@@ -244,12 +244,22 @@
       </div>
 
       <h2 class="text-3xl text-center">Download Cracked Tools</h2>
-      <!--Put warning note saying that I am not responsible for anything that happens if you use these files/sources-->
       <div class="text-center mb-4">
         <p>
           <strong>Warning:</strong> I am not responsible for anything that
-          happens if you use these files/sources.
+          happens if you use these files/sources.<br />Scroll down for some
+          screenshots of the tools.
         </p>
+      </div>
+
+      <!-- Search for Tools -->
+      <div class="text-center mb-4">
+        <input
+          type="text"
+          id="tool-search"
+          class="w-2/3 p-2 rounded bg-gray-800 text-white border border-gray-600 text-center"
+          placeholder="Search Tools..."
+        />
       </div>
       <div class="scrollable-list mx-auto w-full md:w-2/3 mb-8">
         <ul id="tool-links">
@@ -258,16 +268,33 @@
       </div>
 
       <h2 class="text-3xl text-center mb-4">Download Xexs</h2>
+
+      <!-- Search for Xexs -->
+      <div class="text-center mb-4">
+        <input
+          type="text"
+          id="xex-search"
+          class="w-2/3 p-2 rounded bg-gray-800 text-white border border-gray-600 text-center"
+          placeholder="Search Xexs..."
+        />
+      </div>
       <div class="scrollable-list mx-auto w-full md:w-2/3 mb-8">
         <ul id="xex-links">
           <!-- Links will be dynamically added here-->
         </ul>
       </div>
 
-      <!-- <div class="xex-carousel mx-auto w-2/3 mb-8">
-      </div> -->
-
       <h2 class="text-3xl text-center mb-4">Download Sources</h2>
+
+      <!-- Search for Sources -->
+      <div class="text-center mb-4">
+        <input
+          type="text"
+          id="source-search"
+          class="w-2/3 p-2 rounded bg-gray-800 text-white border border-gray-600 text-center"
+          placeholder="Search Sources..."
+        />
+      </div>
       <div class="scrollable-list mx-auto w-full md:w-2/3 mb-8">
         <ul id="source-links">
           <!-- Links will be dynamically added here -->
@@ -275,6 +302,16 @@
       </div>
 
       <h2 class="text-3xl text-center mb-4">Download Random Stuff</h2>
+
+      <!-- Search for Random Stuff -->
+      <div class="text-center mb-4">
+        <input
+          type="text"
+          id="random-search"
+          class="w-2/3 p-2 rounded bg-gray-800 text-white border border-gray-600 text-center"
+          placeholder="Search Random Stuff..."
+        />
+      </div>
       <div class="scrollable-list mx-auto w-full md:w-2/3 mb-8">
         <ul id="random-links">
           <!-- Links will be dynamically added here -->
