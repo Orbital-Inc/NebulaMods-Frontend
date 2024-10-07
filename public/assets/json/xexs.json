@@ -1,811 +1,1000 @@
 {
-  "xexImages": [
-    { "image": "$hit", "downloadLink": "./xexs/$hit.xex" },
+  "images": [
+    {
+      "image": "$hit",
+      "downloadLink": "https://api.nebulamods.ca/xexs/$hit.xex"
+    },
     {
       "image": "1337 Hax",
-      "downloadLink": "./xexs/1337 Hax.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/1337%20Hax.xex"
     },
-    { "image": "2", "downloadLink": "./xexs/2.xex" },
-    { "image": "3", "downloadLink": "./xexs/3.xex" },
-    { "image": "32Char", "downloadLink": "./xexs/32Char.xex" },
-    { "image": "5", "downloadLink": "./xexs/5.xex" },
-    { "image": "6", "downloadLink": "./xexs/6.xex" },
+    {
+      "image": "2",
+      "downloadLink": "https://api.nebulamods.ca/xexs/2.xex"
+    },
+    {
+      "image": "3",
+      "downloadLink": "https://api.nebulamods.ca/xexs/3.xex"
+    },
+    {
+      "image": "32Char",
+      "downloadLink": "https://api.nebulamods.ca/xexs/32Char.xex"
+    },
+    {
+      "image": "5",
+      "downloadLink": "https://api.nebulamods.ca/xexs/5.xex"
+    },
+    {
+      "image": "6",
+      "downloadLink": "https://api.nebulamods.ca/xexs/6.xex"
+    },
     {
       "image": "7sNotify v1.2",
-      "downloadLink": "./xexs/7sNotify v1.2.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/7sNotify%20v1.2.xex"
     },
     {
       "image": "a8ca5-cheatengine",
-      "downloadLink": "./xexs/a8ca5-cheatengine.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/a8ca5-cheatengine.xex"
     },
-    { "image": "Aero", "downloadLink": "./xexs/Aero.xex" },
+    {
+      "image": "Aero",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Aero.xex"
+    },
     {
       "image": "Agony Framework",
-      "downloadLink": "./xexs/Agony Framework.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Agony%20Framework.xex"
     },
-    { "image": "Aimbot", "downloadLink": "./xexs/Aimbot.xex" },
-    { "image": "Akira", "downloadLink": "./xexs/Akira.xex" },
+    {
+      "image": "Aimbot",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Aimbot.xex"
+    },
+    {
+      "image": "Akira",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Akira.xex"
+    },
     {
       "image": "All Cod Bypass",
-      "downloadLink": "./xexs/All Cod Bypass.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/All%20Cod%20Bypass.xex"
     },
-    { "image": "Alpha", "downloadLink": "./xexs/Alpha.xex" },
+    {
+      "image": "Alpha",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Alpha.xex"
+    },
     {
       "image": "AlternativeLive",
-      "downloadLink": "./xexs/AlternativeLive.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/AlternativeLive.xex"
     },
     {
       "image": "AMEngineCrack",
-      "downloadLink": "./xexs/AMEngineCrack.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/AMEngineCrack.xex"
     },
     {
       "image": "Anarchise",
-      "downloadLink": "./xexs/Anarchise.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Anarchise.xex"
     },
     {
       "image": "AnimusOffhost",
-      "downloadLink": "./xexs/AnimusOffhost.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/AnimusOffhost.xex"
     },
     {
       "image": "Annoyance",
-      "downloadLink": "./xexs/Annoyance.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Annoyance.xex"
     },
     {
       "image": "AnonLive",
-      "downloadLink": "./xexs/AnonLive.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/AnonLive.xex"
     },
     {
       "image": "Anti End Game",
-      "downloadLink": "./xexs/Anti End Game.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Anti%20End%20Game.xex"
     },
     {
       "image": "Anti-Plugin",
-      "downloadLink": "./xexs/Anti-Plugin.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Anti-Plugin.xex"
     },
-    { "image": "Aspire", "downloadLink": "./xexs/Aspire.xex" },
-    { "image": "Atlas", "downloadLink": "./xexs/Atlas.xex" },
+    {
+      "image": "Aspire",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Aspire.xex"
+    },
+    {
+      "image": "Atlas",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Atlas.xex"
+    },
     {
       "image": "AwAimbot",
-      "downloadLink": "./xexs/AwAimbot.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/AwAimbot.xex"
     },
-    { "image": "Base", "downloadLink": "./xexs/Base.xex" },
+    {
+      "image": "Base",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Base.xex"
+    },
     {
       "image": "Battlefields",
-      "downloadLink": "./xexs/Battlefields.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Battlefields.xex"
     },
     {
       "image": "Battlefields_6",
-      "downloadLink": "./xexs/Battlefields_6.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Battlefields_6.xex"
     },
-    { "image": "Beats", "downloadLink": "./xexs/Beats.xex" },
+    {
+      "image": "Beats",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Beats.xex"
+    },
     {
       "image": "BedsOffhost",
-      "downloadLink": "./xexs/BedsOffhost.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/BedsOffhost.xex"
     },
     {
       "image": "BHMLive",
-      "downloadLink": "./xexs/BHMLive.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/BHMLive.xex"
     },
-    { "image": "blacky", "downloadLink": "./xexs/blacky.xex" },
+    {
+      "image": "blacky",
+      "downloadLink": "https://api.nebulamods.ca/xexs/blacky.xex"
+    },
     {
       "image": "Blasts_Mods",
-      "downloadLink": "./xexs/Blasts_Mods.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Blasts_Mods.xex"
     },
     {
       "image": "blueNotify",
-      "downloadLink": "./xexs/blueNotify.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/blueNotify.xex"
     },
     {
       "image": "Bo1 Shit Menu",
-      "downloadLink": "./xexs/Bo1 Shit Menu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Bo1%20Shit%20Menu.xex"
     },
     {
       "image": "Bo2 Bypass V2",
-      "downloadLink": "./xexs/Bo2 Bypass V2.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Bo2%20Bypass%20V2.xex"
     },
     {
       "image": "Bo2 Bypass",
-      "downloadLink": "./xexs/Bo2 Bypass.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Bo2%20Bypass.xex"
     },
     {
       "image": "Bo2 Shit Tool",
-      "downloadLink": "./xexs/Bo2 Shit Tool.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Bo2%20Shit%20Tool.xex"
     },
     {
       "image": "BO2 Spoof",
-      "downloadLink": "./xexs/BO2 Spoof.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/BO2%20Spoof.xex"
     },
-    { "image": "BO2", "downloadLink": "./xexs/BO2.xex" },
+    {
+      "image": "BO2",
+      "downloadLink": "https://api.nebulamods.ca/xexs/BO2.xex"
+    },
     {
       "image": "BO2Bypass",
-      "downloadLink": "./xexs/BO2Bypass.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/BO2Bypass.xex"
     },
     {
       "image": "Bo2Bypassed",
-      "downloadLink": "./xexs/Bo2Bypassed.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Bo2Bypassed.xex"
     },
     {
       "image": "BO2Spoofer",
-      "downloadLink": "./xexs/BO2Spoofer.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/BO2Spoofer.xex"
     },
     {
       "image": "Bo2ZombiesNotify",
-      "downloadLink": "./xexs/Bo2ZombiesNotify.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Bo2ZombiesNotify.xex"
     },
     {
       "image": "Bo2_Offhost_Base",
-      "downloadLink": "./xexs/Bo2_Offhost_Base.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Bo2_Offhost_Base.xex"
     },
     {
       "image": "BO2_Spoof",
-      "downloadLink": "./xexs/BO2_Spoof.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/BO2_Spoof.xex"
     },
     {
       "image": "BO3Menu",
-      "downloadLink": "./xexs/BO3Menu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/BO3Menu.xex"
     },
-    { "image": "Bolt", "downloadLink": "./xexs/Bolt.xex" },
+    {
+      "image": "Bolt",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Bolt.xex"
+    },
     {
       "image": "bossamdefault_mp",
-      "downloadLink": "./xexs/bossamdefault_mp.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/bossamdefault_mp.xex"
     },
     {
       "image": "BossModding",
-      "downloadLink": "./xexs/BossModding.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/BossModding.xex"
     },
-    { "image": "Bypass", "downloadLink": "./xexs/Bypass.xex" },
+    {
+      "image": "Bypass",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Bypass.xex"
+    },
     {
       "image": "BypassByEchos",
-      "downloadLink": "./xexs/BypassByEchos.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/BypassByEchos.xex"
     },
     {
       "image": "BypassPlugin",
-      "downloadLink": "./xexs/BypassPlugin.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/BypassPlugin.xex"
     },
     {
       "image": "CheatEngine MW3",
-      "downloadLink": "./xexs/CheatEngine MW3.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/CheatEngine%20MW3.xex"
     },
     {
       "image": "CheatEngine",
-      "downloadLink": "./xexs/CheatEngine.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/CheatEngine.xex"
     },
-    { "image": "Cheats", "downloadLink": "./xexs/Cheats.xex" },
+    {
+      "image": "Cheats",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Cheats.xex"
+    },
     {
       "image": "Chimera",
-      "downloadLink": "./xexs/Chimera.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Chimera.xex"
     },
     {
       "image": "CoD Bypass",
-      "downloadLink": "./xexs/CoD Bypass.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/CoD%20Bypass.xex"
     },
     {
       "image": "COD Engine",
-      "downloadLink": "./xexs/COD Engine.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/COD%20Engine.xex"
     },
     {
       "image": "CoDEngine",
-      "downloadLink": "./xexs/CoDEngine.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/CoDEngine.xex"
     },
-    { "image": "Comet", "downloadLink": "./xexs/Comet.xex" },
+    {
+      "image": "Comet",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Comet.xex"
+    },
     {
       "image": "Console Ban Bypass",
-      "downloadLink": "./xexs/Console Ban Bypass.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Console%20Ban%20Bypass.xex"
     },
     {
       "image": "CreeperBeta",
-      "downloadLink": "./xexs/CreeperBeta.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/CreeperBeta.xex"
     },
     {
       "image": "CrypticLive",
-      "downloadLink": "./xexs/CrypticLive.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/CrypticLive.xex"
     },
     {
       "image": "CryptLive",
-      "downloadLink": "./xexs/CryptLive.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/CryptLive.xex"
     },
-    { "image": "Custom", "downloadLink": "./xexs/Custom.xex" },
+    {
+      "image": "Custom",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Custom.xex"
+    },
     {
       "image": "Cyanokit",
-      "downloadLink": "./xexs/Cyanokit.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Cyanokit.xex"
     },
     {
       "image": "DankMenu Cracked",
-      "downloadLink": "./xexs/DankMenu Cracked.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/DankMenu%20Cracked.xex"
     },
     {
       "image": "DankMenu",
-      "downloadLink": "./xexs/DankMenu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/DankMenu.xex"
     },
     {
       "image": "Deception",
-      "downloadLink": "./xexs/Deception.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Deception.xex"
     },
-    { "image": "Design", "downloadLink": "./xexs/Design.xex" },
+    {
+      "image": "Design",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Design.xex"
+    },
     {
       "image": "Destruction",
-      "downloadLink": "./xexs/Destruction.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Destruction.xex"
     },
     {
       "image": "DieXBLSOffhost",
-      "downloadLink": "./xexs/DieXBLSOffhost.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/DieXBLSOffhost.xex"
     },
     {
       "image": "divercitylive",
-      "downloadLink": "./xexs/divercitylive.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/divercitylive.xex"
     },
     {
       "image": "dudeeitsbrian",
-      "downloadLink": "./xexs/dudeeitsbrian.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/dudeeitsbrian.xex"
     },
     {
       "image": "DuhSauce",
-      "downloadLink": "./xexs/DuhSauce.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/DuhSauce.xex"
     },
     {
       "image": "Edge Offline",
-      "downloadLink": "./xexs/Edge Offline.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Edge%20Offline.xex"
     },
-    { "image": "Edge", "downloadLink": "./xexs/Edge.xex" },
-    { "image": "EFLC", "downloadLink": "./xexs/EFLC.xex" },
+    {
+      "image": "Edge",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Edge.xex"
+    },
+    {
+      "image": "EFLC",
+      "downloadLink": "https://api.nebulamods.ca/xexs/EFLC.xex"
+    },
     {
       "image": "EliteMods",
-      "downloadLink": "./xexs/EliteMods.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/EliteMods.xex"
     },
     {
       "image": "EnforcerMenu",
-      "downloadLink": "./xexs/EnforcerMenu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/EnforcerMenu.xex"
     },
-    { "image": "Engine", "downloadLink": "./xexs/Engine.xex" },
+    {
+      "image": "Engine",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Engine.xex"
+    },
     {
       "image": "EunoiaPrivate",
-      "downloadLink": "./xexs/EunoiaPrivate.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/EunoiaPrivate.xex"
     },
     {
       "image": "EunoiaPrivate_0",
-      "downloadLink": "./xexs/EunoiaPrivate_0.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/EunoiaPrivate_0.xex"
     },
     {
       "image": "EuroStealth",
-      "downloadLink": "./xexs/EuroStealth.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/EuroStealth.xex"
     },
-    { "image": "Evade", "downloadLink": "./xexs/Evade.xex" },
+    {
+      "image": "Evade",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Evade.xex"
+    },
     {
       "image": "ExodusBase",
-      "downloadLink": "./xexs/ExodusBase.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/ExodusBase.xex"
     },
     {
       "image": "ExtremeMods",
-      "downloadLink": "./xexs/ExtremeMods.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/ExtremeMods.xex"
     },
     {
       "image": "Faggot Hax BO2",
-      "downloadLink": "./xexs/Faggot Hax BO2.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Faggot%20Hax%20BO2.xex"
     },
     {
       "image": "Faggot Hax",
-      "downloadLink": "./xexs/Faggot Hax.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Faggot%20Hax.xex"
     },
     {
       "image": "fakeanim",
-      "downloadLink": "./xexs/fakeanim.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/fakeanim.xex"
     },
-    { "image": "fgthax", "downloadLink": "./xexs/fgthax.xex" },
+    {
+      "image": "fgthax",
+      "downloadLink": "https://api.nebulamods.ca/xexs/fgthax.xex"
+    },
     {
       "image": "FH2Trainer",
-      "downloadLink": "./xexs/FH2Trainer.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/FH2Trainer.xex"
     },
     {
       "image": "FonzBypass",
-      "downloadLink": "./xexs/FonzBypass.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/FonzBypass.xex"
     },
-    { "image": "FTP", "downloadLink": "./xexs/FTP.xex" },
+    {
+      "image": "FTP",
+      "downloadLink": "https://api.nebulamods.ca/xexs/FTP.xex"
+    },
     {
       "image": "FuckerMenu",
-      "downloadLink": "./xexs/FuckerMenu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/FuckerMenu.xex"
     },
-    { "image": "Fusion", "downloadLink": "./xexs/Fusion.xex" },
+    {
+      "image": "Fusion",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Fusion.xex"
+    },
     {
       "image": "GlowModsEngine",
-      "downloadLink": "./xexs/GlowModsEngine.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GlowModsEngine.xex"
     },
     {
       "image": "GTA5Menu",
-      "downloadLink": "./xexs/GTA5Menu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GTA5Menu.xex"
     },
     {
       "image": "gtahaxs",
-      "downloadLink": "./xexs/gtahaxs.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/gtahaxs.xex"
     },
     {
       "image": "GTAPatcher",
-      "downloadLink": "./xexs/GTAPatcher.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GTAPatcher.xex"
     },
     {
       "image": "GTASyndicate",
-      "downloadLink": "./xexs/GTASyndicate.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GTASyndicate.xex"
     },
     {
       "image": "GTAV Havoc Cracked",
-      "downloadLink": "./xexs/GTAV Havoc Cracked.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GTAV%20Havoc%20Cracked.xex"
     },
     {
       "image": "GTAVEnforcer",
-      "downloadLink": "./xexs/GTAVEnforcer.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GTAVEnforcer.xex"
     },
     {
       "image": "GTAVHavocBeta",
-      "downloadLink": "./xexs/GTAVHavocBeta.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GTAVHavocBeta.xex"
     },
     {
       "image": "GTAVHavocPublic",
-      "downloadLink": "./xexs/GTAVHavocPublic.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GTAVHavocPublic.xex"
     },
     {
       "image": "GTAVMenu",
-      "downloadLink": "./xexs/GTAVMenu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GTAVMenu.xex"
     },
     {
       "image": "GTAVThePurge-Private",
-      "downloadLink": "./xexs/GTAVThePurge-Private.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GTAVThePurge-Private.xex"
     },
     {
       "image": "GTAVThePurge",
-      "downloadLink": "./xexs/GTAVThePurge.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GTAVThePurge.xex"
     },
     {
       "image": "GTAVThePurgeCrack",
-      "downloadLink": "./xexs/GTAVThePurgeCrack.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/GTAVThePurgeCrack.xex"
     },
-    { "image": "gtset", "downloadLink": "./xexs/gtset.xex" },
+    {
+      "image": "gtset",
+      "downloadLink": "https://api.nebulamods.ca/xexs/gtset.xex"
+    },
     {
       "image": "HalloweenNotify",
-      "downloadLink": "./xexs/HalloweenNotify.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/HalloweenNotify.xex"
     },
-    { "image": "Halo", "downloadLink": "./xexs/Halo.xex" },
-    { "image": "HaloR", "downloadLink": "./xexs/HaloR.xex" },
-    { "image": "Hax", "downloadLink": "./xexs/Hax.xex" },
+    {
+      "image": "Halo",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Halo.xex"
+    },
+    {
+      "image": "HaloR",
+      "downloadLink": "https://api.nebulamods.ca/xexs/HaloR.xex"
+    },
+    {
+      "image": "Hax",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Hax.xex"
+    },
     {
       "image": "HitmanOficialVersionFinalV5-5",
-      "downloadLink": "./xexs/HitmanOficialVersionFinalV5-5.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/HitmanOficialVersionFinalV5-5.xex"
     },
-    { "image": "HvH", "downloadLink": "./xexs/HvH.xex" },
+    {
+      "image": "HvH",
+      "downloadLink": "https://api.nebulamods.ca/xexs/HvH.xex"
+    },
     {
       "image": "IcedHarley 1.27",
-      "downloadLink": "./xexs/IcedHarley 1.27.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/IcedHarley%201.27.xex"
     },
-    { "image": "ImGay", "downloadLink": "./xexs/ImGay.xex" },
+    {
+      "image": "ImGay",
+      "downloadLink": "https://api.nebulamods.ca/xexs/ImGay.xex"
+    },
     {
       "image": "Infected 3.0",
-      "downloadLink": "./xexs/Infected 3.0.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Infected%203.0.xex"
     },
     {
       "image": "Infernus",
-      "downloadLink": "./xexs/Infernus.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Infernus.xex"
     },
     {
       "image": "JakesMenu",
-      "downloadLink": "./xexs/JakesMenu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/JakesMenu.xex"
     },
-    { "image": "Jiggy", "downloadLink": "./xexs/Jiggy.xex" },
+    {
+      "image": "Jiggy",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Jiggy.xex"
+    },
     {
       "image": "Joker Cheats",
-      "downloadLink": "./xexs/Joker Cheats.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Joker%20Cheats.xex"
     },
     {
       "image": "JokerEngine",
-      "downloadLink": "./xexs/JokerEngine.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/JokerEngine.xex"
     },
     {
       "image": "Kryptonic",
-      "downloadLink": "./xexs/Kryptonic.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Kryptonic.xex"
     },
-    { "image": "l00t", "downloadLink": "./xexs/l00t.xex" },
+    {
+      "image": "l00t",
+      "downloadLink": "https://api.nebulamods.ca/xexs/l00t.xex"
+    },
     {
       "image": "LegacyMenu",
-      "downloadLink": "./xexs/LegacyMenu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/LegacyMenu.xex"
     },
     {
       "image": "LegacyV1",
-      "downloadLink": "./xexs/LegacyV1.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/LegacyV1.xex"
     },
-    { "image": "Matrix", "downloadLink": "./xexs/Matrix.xex" },
+    {
+      "image": "Matrix",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Matrix.xex"
+    },
     {
       "image": "MatrixMods",
-      "downloadLink": "./xexs/MatrixMods.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/MatrixMods.xex"
     },
     {
       "image": "MegaMenu",
-      "downloadLink": "./xexs/MegaMenu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/MegaMenu.xex"
     },
     {
       "image": "MoccowCheats",
-      "downloadLink": "./xexs/MoccowCheats.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/MoccowCheats.xex"
     },
     {
       "image": "Multi Colored Notify",
-      "downloadLink": "./xexs/Multi Colored Notify.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Multi%20Colored%20Notify.xex"
     },
     {
       "image": "MW2 Aimbot",
-      "downloadLink": "./xexs/MW2 Aimbot.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/MW2%20Aimbot.xex"
     },
-    { "image": "MW2", "downloadLink": "./xexs/MW2.xex" },
-    { "image": "MW2_0", "downloadLink": "./xexs/MW2_0.xex" },
-    { "image": "MW3Hax", "downloadLink": "./xexs/MW3Hax.xex" },
+    {
+      "image": "MW2",
+      "downloadLink": "https://api.nebulamods.ca/xexs/MW2.xex"
+    },
+    {
+      "image": "MW2_0",
+      "downloadLink": "https://api.nebulamods.ca/xexs/MW2_0.xex"
+    },
+    {
+      "image": "MW3Hax",
+      "downloadLink": "https://api.nebulamods.ca/xexs/MW3Hax.xex"
+    },
     {
       "image": "Neptune",
-      "downloadLink": "./xexs/Neptune.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Neptune.xex"
     },
-    { "image": "Nether", "downloadLink": "./xexs/Nether.xex" },
+    {
+      "image": "Nether",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Nether.xex"
+    },
     {
       "image": "NiceNotify",
-      "downloadLink": "./xexs/NiceNotify.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NiceNotify.xex"
     },
-    { "image": "Nike", "downloadLink": "./xexs/Nike.xex" },
+    {
+      "image": "Nike",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Nike.xex"
+    },
     {
       "image": "NiNJA 2.0",
-      "downloadLink": "./xexs/NiNJA 2.0.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NiNJA%202.0.xex"
     },
     {
       "image": "NiNJA AW",
-      "downloadLink": "./xexs/NiNJA AW.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NiNJA%20AW.xex"
     },
     {
       "image": "Ninja Engine V2 Base",
-      "downloadLink": "./xexs/Ninja Engine V2 Base.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Ninja%20Engine%20V2%20Base.xex"
     },
     {
       "image": "NiNJA Ghosts",
-      "downloadLink": "./xexs/NiNJA Ghosts.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NiNJA%20Ghosts.xex"
     },
     {
       "image": "NiNjA Hud-Notify",
-      "downloadLink": "./xexs/NiNjA Hud-Notify.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NiNjA%20Hud-Notify.xex"
     },
     {
       "image": "NiNJA MW2",
-      "downloadLink": "./xexs/NiNJA MW2.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NiNJA%20MW2.xex"
     },
     {
       "image": "NiNJA MW3",
-      "downloadLink": "./xexs/NiNJA MW3.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NiNJA%20MW3.xex"
     },
     {
       "image": "Ninja v1",
-      "downloadLink": "./xexs/Ninja v1.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Ninja%20v1.xex"
     },
     {
       "image": "Ninja V2",
-      "downloadLink": "./xexs/Ninja V2.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Ninja%20V2.xex"
     },
     {
       "image": "NiNJACOD",
-      "downloadLink": "./xexs/NiNJACOD.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NiNJACOD.xex"
     },
     {
       "image": "NinjaEngineV2",
-      "downloadLink": "./xexs/NinjaEngineV2.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NinjaEngineV2.xex"
     },
     {
       "image": "NiNJAGTA5",
-      "downloadLink": "./xexs/NiNJAGTA5.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NiNJAGTA5.xex"
     },
     {
       "image": "NinjaNotify",
-      "downloadLink": "./xexs/NinjaNotify.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NinjaNotify.xex"
     },
     {
       "image": "NiNJA_BO2",
-      "downloadLink": "./xexs/NiNJA_BO2.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/NiNJA_BO2.xex"
     },
     {
       "image": "Ninja_Engine_V1",
-      "downloadLink": "./xexs/Ninja_Engine_V1.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Ninja_Engine_V1.xex"
     },
-    { "image": "Notify", "downloadLink": "./xexs/Notify.xex" },
+    {
+      "image": "Notify",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Notify.xex"
+    },
     {
       "image": "Offhost",
-      "downloadLink": "./xexs/Offhost.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Offhost.xex"
     },
     {
       "image": "OGMenuCrack",
-      "downloadLink": "./xexs/OGMenuCrack.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/OGMenuCrack.xex"
     },
-    { "image": "Online", "downloadLink": "./xexs/Online.xex" },
-    { "image": "oof", "downloadLink": "./xexs/oof.xex" },
+    {
+      "image": "Online",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Online.xex"
+    },
+    {
+      "image": "oof",
+      "downloadLink": "https://api.nebulamods.ca/xexs/oof.xex"
+    },
     {
       "image": "Pandora",
-      "downloadLink": "./xexs/Pandora.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Pandora.xex"
     },
     {
       "image": "PhoenixCE",
-      "downloadLink": "./xexs/PhoenixCE.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/PhoenixCE.xex"
     },
     {
       "image": "Pikachu",
-      "downloadLink": "./xexs/Pikachu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Pikachu.xex"
     },
     {
       "image": "PotHeadMenu",
-      "downloadLink": "./xexs/PotHeadMenu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/PotHeadMenu.xex"
     },
     {
       "image": "Preferences",
-      "downloadLink": "./xexs/Preferences.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Preferences.xex"
     },
     {
       "image": "Private Cheats",
-      "downloadLink": "./xexs/Private Cheats.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Private%20Cheats.xex"
     },
     {
       "image": "Private Cheats_0",
-      "downloadLink": "./xexs/Private Cheats_0.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Private%20Cheats_0.xex"
     },
     {
       "image": "Project360",
-      "downloadLink": "./xexs/Project360.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Project360.xex"
     },
     {
       "image": "ProjectCryptic",
-      "downloadLink": "./xexs/ProjectCryptic.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/ProjectCryptic.xex"
     },
     {
       "image": "ProjectExoMw3",
-      "downloadLink": "./xexs/ProjectExoMw3.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/ProjectExoMw3.xex"
     },
     {
       "image": "Prviate Cheats",
-      "downloadLink": "./xexs/Prviate Cheats.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Prviate%20Cheats.xex"
     },
-    { "image": "Purge", "downloadLink": "./xexs/Purge.xex" },
+    {
+      "image": "Purge",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Purge.xex"
+    },
     {
       "image": "RawFileManager",
-      "downloadLink": "./xexs/RawFileManager.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/RawFileManager.xex"
     },
     {
       "image": "RealNigga",
-      "downloadLink": "./xexs/RealNigga.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/RealNigga.xex"
     },
     {
       "image": "RebelMenu",
-      "downloadLink": "./xexs/RebelMenu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/RebelMenu.xex"
     },
     {
       "image": "Riptide",
-      "downloadLink": "./xexs/Riptide.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Riptide.xex"
     },
     {
       "image": "SarxsOffhost",
-      "downloadLink": "./xexs/SarxsOffhost.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SarxsOffhost.xex"
     },
     {
       "image": "SarxsOffhost_0_0",
-      "downloadLink": "./xexs/SarxsOffhost_0_0.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SarxsOffhost_0_0.xex"
     },
     {
       "image": "Saymtex",
-      "downloadLink": "./xexs/Saymtex.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Saymtex.xex"
     },
     {
       "image": "school shoter",
-      "downloadLink": "./xexs/school shoter.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/school%20shoter.xex"
     },
-    { "image": "Septic", "downloadLink": "./xexs/Septic.xex" },
+    {
+      "image": "Septic",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Septic.xex"
+    },
     {
       "image": "SepticEngine",
-      "downloadLink": "./xexs/SepticEngine.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SepticEngine.xex"
     },
     {
       "image": "SepticLoot",
-      "downloadLink": "./xexs/SepticLoot.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SepticLoot.xex"
     },
     {
       "image": "ShadowEngine",
-      "downloadLink": "./xexs/ShadowEngine.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/ShadowEngine.xex"
     },
-    { "image": "Sick", "downloadLink": "./xexs/Sick.xex" },
+    {
+      "image": "Sick",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Sick.xex"
+    },
     {
       "image": "SikOcide",
-      "downloadLink": "./xexs/SikOcide.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SikOcide.xex"
     },
     {
       "image": "SilkRoad 1.7",
-      "downloadLink": "./xexs/SilkRoad 1.7.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SilkRoad%201.7.xex"
     },
     {
       "image": "SilkRoad",
-      "downloadLink": "./xexs/SilkRoad.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SilkRoad.xex"
     },
     {
       "image": "SkyAcro",
-      "downloadLink": "./xexs/SkyAcro.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SkyAcro.xex"
     },
     {
       "image": "SkyAcro5.5",
-      "downloadLink": "./xexs/SkyAcro5.5.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SkyAcro5.5.xex"
     },
     {
       "image": "SkyAcro6.5",
-      "downloadLink": "./xexs/SkyAcro6.5.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SkyAcro6.5.xex"
     },
     {
       "image": "SkyAcro7.5",
-      "downloadLink": "./xexs/SkyAcro7.5.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SkyAcro7.5.xex"
     },
     {
       "image": "SkyAcroV7 EDITION",
-      "downloadLink": "./xexs/SkyAcroV7 EDITION.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SkyAcroV7%20EDITION.xex"
     },
     {
       "image": "SkyAcroV7",
-      "downloadLink": "./xexs/SkyAcroV7.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SkyAcroV7.xex"
     },
     {
       "image": "sNotify",
-      "downloadLink": "./xexs/sNotify.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/sNotify.xex"
     },
-    { "image": "START", "downloadLink": "./xexs/START.xex" },
+    {
+      "image": "START",
+      "downloadLink": "https://api.nebulamods.ca/xexs/START.xex"
+    },
     {
       "image": "SubliminalV",
-      "downloadLink": "./xexs/SubliminalV.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/SubliminalV.xex"
     },
     {
       "image": "Supreme",
-      "downloadLink": "./xexs/Supreme.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Supreme.xex"
     },
     {
       "image": "Syndicate",
-      "downloadLink": "./xexs/Syndicate.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Syndicate.xex"
     },
-    { "image": "Tab", "downloadLink": "./xexs/Tab.xex" },
+    {
+      "image": "Tab",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Tab.xex"
+    },
     {
       "image": "TabCheats",
-      "downloadLink": "./xexs/TabCheats.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/TabCheats.xex"
     },
     {
       "image": "Tabs Offhost",
-      "downloadLink": "./xexs/Tabs Offhost.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Tabs%20Offhost.xex"
     },
     {
       "image": "Tampered CE V1_0_1",
-      "downloadLink": "./xexs/Tampered CE V1_0_1.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Tampered%20CE%20V1_0_1.xex"
     },
     {
       "image": "Tampered CE",
-      "downloadLink": "./xexs/Tampered CE.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/Tampered%20CE.xex"
     },
     {
       "image": "TamperedLive",
-      "downloadLink": "./xexs/TamperedLive.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/TamperedLive.xex"
     },
-    { "image": "Teapot", "downloadLink": "./xexs/Teapot.xex" },
+    {
+      "image": "Teapot",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Teapot.xex"
+    },
     {
       "image": "TeapotCE",
-      "downloadLink": "./xexs/TeapotCE.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/TeapotCE.xex"
     },
     {
       "image": "TeapotLoader",
-      "downloadLink": "./xexs/TeapotLoader.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/TeapotLoader.xex"
     },
     {
       "image": "TestMenu",
-      "downloadLink": "./xexs/TestMenu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/TestMenu.xex"
     },
     {
       "image": "The Purge v3.9",
-      "downloadLink": "./xexs/The Purge v3.9.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/The%20Purge%20v3.9.xex"
     },
     {
       "image": "TheDream",
-      "downloadLink": "./xexs/TheDream.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/TheDream.xex"
     },
     {
       "image": "ThugzLife",
-      "downloadLink": "./xexs/ThugzLife.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/ThugzLife.xex"
     },
-    { "image": "tr01", "downloadLink": "./xexs/tr01.xex" },
+    {
+      "image": "tr01",
+      "downloadLink": "https://api.nebulamods.ca/xexs/tr01.xex"
+    },
     {
       "image": "TU6Enabler",
-      "downloadLink": "./xexs/TU6Enabler.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/TU6Enabler.xex"
     },
     {
       "image": "Unitedx",
-      "downloadLink": "./xexs/UnitedX.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/UnitedX.xex"
     },
-    { "image": "VANiSH", "downloadLink": "./xexs/VANiSH.xex" },
+    {
+      "image": "VANiSH",
+      "downloadLink": "https://api.nebulamods.ca/xexs/VANiSH.xex"
+    },
     {
       "image": "VapingLounge",
-      "downloadLink": "./xexs/VapingLounge.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/VapingLounge.xex"
     },
     {
       "image": "VENOM CE",
-      "downloadLink": "./xexs/VENOM CE.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/VENOM%20CE.xex"
     },
     {
       "image": "VNM_3.0",
-      "downloadLink": "./xexs/VNM_3.0.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/VNM_3.0.xex"
     },
-    { "image": "weed", "downloadLink": "./xexs/weed.xex" },
+    {
+      "image": "weed",
+      "downloadLink": "https://api.nebulamods.ca/xexs/weed.xex"
+    },
     {
       "image": "XBLBallin",
-      "downloadLink": "./xexs/XBLBallin.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XBLBallin.xex"
     },
     {
       "image": "XBLDevastation",
-      "downloadLink": "./xexs/XBLDevastation.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XBLDevastation.xex"
     },
-    { "image": "XBLive", "downloadLink": "./xexs/XBLive.xex" },
+    {
+      "image": "XBLive",
+      "downloadLink": "https://api.nebulamods.ca/xexs/XBLive.xex"
+    },
     {
       "image": "XBLPurpleHaze",
-      "downloadLink": "./xexs/XBLPurpleHaze.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XBLPurpleHaze.xex"
     },
     {
       "image": "XBLSLauncher",
-      "downloadLink": "./xexs/XBLSLauncher.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XBLSLauncher.xex"
     },
     {
       "image": "XBLSRevBeta",
-      "downloadLink": "./xexs/XBLSRevBeta.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XBLSRevBeta.xex"
     },
     {
       "image": "XBLStudio",
-      "downloadLink": "./xexs/XBLStudio.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XBLStudio.xex"
     },
     {
       "image": "XBLSynax",
-      "downloadLink": "./xexs/XBLSynax.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XBLSynax.xex"
     },
     {
       "image": "XBLTuna",
-      "downloadLink": "./xexs/XBLTuna.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XBLTuna.xex"
     },
     {
       "image": "XboxCore",
-      "downloadLink": "./xexs/XboxCore.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XboxCore.xex"
     },
     {
       "image": "xbPirate",
-      "downloadLink": "./xexs/xbPirate.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/xbPirate.xex"
     },
     {
       "image": "XeCheats",
-      "downloadLink": "./xexs/XeCheats.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XeCheats.xex"
     },
     {
       "image": "xexcaleb",
-      "downloadLink": "./xexs/xexcaleb.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/xexcaleb.xex"
     },
     {
       "image": "XGMLive",
-      "downloadLink": "./xexs/XGMLive.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XGMLive.xex"
     },
-    { "image": "xLive", "downloadLink": "./xexs/xLive.xex" },
+    {
+      "image": "xLive",
+      "downloadLink": "https://api.nebulamods.ca/xexs/xLive.xex"
+    },
     {
       "image": "xNETEngine",
-      "downloadLink": "./xexs/xNETEngine.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/xNETEngine.xex"
     },
-    { "image": "xNiNJA", "downloadLink": "./xexs/xNiNJA.xex" },
+    {
+      "image": "xNiNJA",
+      "downloadLink": "https://api.nebulamods.ca/xexs/xNiNJA.xex"
+    },
     {
       "image": "xNotify",
-      "downloadLink": "./xexs/xNotify.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/xNotify.xex"
     },
-    { "image": "XOS", "downloadLink": "./xexs/XOS.xex" },
+    {
+      "image": "XOS",
+      "downloadLink": "https://api.nebulamods.ca/xexs/XOS.xex"
+    },
     {
       "image": "XosOffline",
-      "downloadLink": "./xexs/XosOffline.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/XosOffline.xex"
     },
-    { "image": "XUID", "downloadLink": "./xexs/XUID.xex" },
+    {
+      "image": "XUID",
+      "downloadLink": "https://api.nebulamods.ca/xexs/XUID.xex"
+    },
     {
       "image": "YetAnotherEngine",
-      "downloadLink": "./xexs/YetAnotherEngine.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/YetAnotherEngine.xex"
     },
-    { "image": "yolo", "downloadLink": "./xexs/yolo.xex" },
-    { "image": "yolo_0", "downloadLink": "./xexs/yolo_0.xex" },
-    { "image": "Zenyle", "downloadLink": "./xexs/Zenyle.xex" },
+    {
+      "image": "yolo",
+      "downloadLink": "https://api.nebulamods.ca/xexs/yolo.xex"
+    },
+    {
+      "image": "yolo_0",
+      "downloadLink": "https://api.nebulamods.ca/xexs/yolo_0.xex"
+    },
+    {
+      "image": "Zenyle",
+      "downloadLink": "https://api.nebulamods.ca/xexs/Zenyle.xex"
+    },
     {
       "image": "ZenyleMenu",
-      "downloadLink": "./xexs/ZenyleMenu.xex"
+      "downloadLink": "https://api.nebulamods.ca/xexs/ZenyleMenu.xex"
     }
   ]
 }

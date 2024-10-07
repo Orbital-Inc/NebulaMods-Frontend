@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", async function () {
+  let isPlaying = true;
+  let imageCurrentIndex = 0;
+  let showcaseCurrentIndex = 0;
   // Function to fetch JSON data for each collection
   const fetchCollectionData = async (jsonPath) => {
     try {
@@ -41,6 +44,8 @@ document.addEventListener("DOMContentLoaded", async function () {
       imgElement.src = `${imageFolder}/${encodedImage}`;
       imgElement.alt = imageData.image;
       imgElement.classList.add("w-full", "rounded-lg");
+      imgElement.classList.add("cursor-pointer");
+      imgElement.loading = "lazy";
 
       const textElement = document.createElement("p");
       textElement.classList.add("text-center", "mt-2");
@@ -76,16 +81,39 @@ document.addEventListener("DOMContentLoaded", async function () {
       container.appendChild(itemContainer);
     });
 
-    let currentIndex = 0;
     setInterval(() => {
-      const items = container.querySelectorAll("div");
-      if (items.length === 0) return; // Guard against empty container
-      items[currentIndex].querySelector("img").classList.remove("active");
-      items[currentIndex].querySelector("p").classList.remove("active");
-      currentIndex = (currentIndex + 1) % items.length;
-      items[currentIndex].querySelector("img").classList.add("active");
-      items[currentIndex].querySelector("p").classList.add("active");
-    }, 3000);
+      if (isPlaying && containerSelector === ".carousel") {
+        // Select the div with the class 'carousel'
+        const carouselContainer = document.querySelector(".carousel");
+        // Get all the child elements inside the div
+        const items = carouselContainer.querySelectorAll("div");
+        if (items.length === 0) return; // Guard against empty container
+        items[imageCurrentIndex]
+          .querySelector("img")
+          .classList.remove("active");
+        items[imageCurrentIndex].querySelector("p").classList.remove("active");
+        imageCurrentIndex = (imageCurrentIndex + 1) % items.length;
+        items[imageCurrentIndex].querySelector("img").classList.add("active");
+        items[imageCurrentIndex].querySelector("p").classList.add("active");
+      } else {
+        // Select the div with the class 'carousel'
+        const carouselContainer = document.querySelector(".showcase-carousel");
+        // Get all the child elements inside the div
+        const items = carouselContainer.querySelectorAll("div");
+        if (items.length === 0) return; // Guard against empty container
+        items[showcaseCurrentIndex]
+          .querySelector("img")
+          .classList.remove("active");
+        items[showcaseCurrentIndex]
+          .querySelector("p")
+          .classList.remove("active");
+        showcaseCurrentIndex = (showcaseCurrentIndex + 1) % items.length;
+        items[showcaseCurrentIndex]
+          .querySelector("img")
+          .classList.add("active");
+        items[showcaseCurrentIndex].querySelector("p").classList.add("active");
+      }
+    }, 5000);
   };
 
   // Function to filter list based on search input
@@ -169,30 +197,26 @@ document.addEventListener("DOMContentLoaded", async function () {
       );
 
       // Add data to lists
-      if (xexData && Array.isArray(xexData.xexImages)) {
-        addLinksToList("xex-links", xexData.xexImages, "xex");
+      if (xexData && Array.isArray(xexData.images)) {
+        addLinksToList("xex-links", xexData.images, "xex");
       }
 
-      if (toolData && Array.isArray(toolData.toolImages)) {
+      if (toolData && Array.isArray(toolData.images)) {
         createCarousel(
           ".carousel",
           "./assets/img/tools",
-          toolData.toolImages,
+          toolData.images,
           true
         );
-        addLinksToList("tool-links", toolData.toolImages, "rar");
+        addLinksToList("tool-links", toolData.images, "rar");
       }
 
-      if (sourceData && Array.isArray(sourceData.sourceImages)) {
-        addLinksToList("source-links", sourceData.sourceImages, "rar");
+      if (sourceData && Array.isArray(sourceData.images)) {
+        addLinksToList("source-links", sourceData.images, "rar");
       }
 
-      if (randomStuffData && Array.isArray(randomStuffData.sourceRandomStuff)) {
-        addLinksToList(
-          "random-links",
-          randomStuffData.sourceRandomStuff,
-          "rar"
-        );
+      if (randomStuffData && Array.isArray(randomStuffData.images)) {
+        addLinksToList("random-links", randomStuffData.images, "rar");
       }
 
       if (showcaseData && Array.isArray(showcaseData.showcaseImage)) {
@@ -235,4 +259,97 @@ document.addEventListener("DOMContentLoaded", async function () {
   icons.forEach((icon) => {
     cycleColors(icon);
   });
+
+  // Function to play/pause carousel using event listener on id play
+  const playPauseCarousel = (containerSelector, playButtonId) => {
+    const container = document.querySelector(containerSelector);
+    const playButton = document.getElementById(playButtonId);
+
+    if (!container || !playButton) {
+      console.error("Container or play button not found:", containerSelector);
+      return;
+    }
+
+    playButton.addEventListener("click", () => {
+      if (isPlaying) {
+        playButton.textContent = "Play";
+      } else {
+        playButton.textContent = "Pause";
+      }
+      isPlaying = !isPlaying;
+    });
+  };
+
+  // Previous button for carousel using event listener on id previous
+  const previousCarousel = (containerSelector, previousButtonId) => {
+    const container = document.querySelector(containerSelector);
+    const previousButton = document.getElementById(previousButtonId);
+
+    if (!container || !previousButton) {
+      console.error(
+        "Container or previous button not found:",
+        containerSelector
+      );
+      return;
+    }
+
+    previousButton.addEventListener("click", () => {
+      // Select the div with the class 'carousel'
+      const carouselContainer = document.querySelector(".carousel");
+      // Get all the child elements inside the div
+      const items = carouselContainer.querySelectorAll("div");
+      if (items.length === 0) return; // Guard against empty container
+      items[imageCurrentIndex].querySelector("img").classList.remove("active");
+      items[imageCurrentIndex].querySelector("p").classList.remove("active");
+      imageCurrentIndex = (imageCurrentIndex - 1) % items.length;
+      items[imageCurrentIndex].querySelector("img").classList.add("active");
+      items[imageCurrentIndex].querySelector("p").classList.add("active");
+    });
+  };
+
+  // Next button for carousel using event listener on id next
+  const nextCarousel = (containerSelector, nextButtonId) => {
+    const container = document.querySelector(containerSelector);
+    const nextButton = document.getElementById(nextButtonId);
+
+    if (!container || !nextButton) {
+      console.error("Container or next button not found:", containerSelector);
+      return;
+    }
+
+    nextButton.addEventListener("click", () => {
+      // Select the div with the class 'carousel'
+      const carouselContainer = document.querySelector(".carousel");
+      // Get all the child elements inside the div
+      const items = carouselContainer.querySelectorAll("div");
+      if (items.length === 0) return; // Guard against empty container
+      items[imageCurrentIndex].querySelector("img").classList.remove("active");
+      items[imageCurrentIndex].querySelector("p").classList.remove("active");
+      imageCurrentIndex = (imageCurrentIndex + 1) % items.length;
+      items[imageCurrentIndex].querySelector("img").classList.add("active");
+      items[imageCurrentIndex].querySelector("p").classList.add("active");
+    });
+  };
+
+  // Next button for carousel using event listener on id next
+  const skipToBottom = (buttonId) => {
+    const skipButton = document.getElementById(buttonId);
+
+    if (!skipButton) {
+      console.error("Skip button not found:");
+      return;
+    }
+
+    skipButton.addEventListener("click", () => {
+      // Select the div with the class 'carousel'
+      const carouselContainer = document.querySelector(".carousel");
+      // Move screen to the carousel
+      carouselContainer.scrollIntoView({ behavior: "smooth" });
+    });
+  };
+
+  playPauseCarousel(".carousel", "play");
+  previousCarousel(".carousel", "previous");
+  nextCarousel(".carousel", "next");
+  skipToBottom("skipToBottom");
 });

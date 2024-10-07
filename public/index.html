@@ -250,6 +250,21 @@
           happens if you use these files/sources.<br />Scroll down for some
           screenshots of the tools.
         </p>
+        <button id="skipToBottom">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-12 h-12 md:w-16 md:h-16"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M18.5303 9.46967C18.8232 9.76256 18.8232 10.2374 18.5303 10.5303L12.5303 16.5303C12.2374 16.8232 11.7626 16.8232 11.4697 16.5303L5.46967 10.5303C5.17678 10.2374 5.17678 9.76256 5.46967 9.46967C5.76256 9.17678 6.23744 9.17678 6.53033 9.46967L12 14.9393L17.4697 9.46967C17.7626 9.17678 18.2374 9.17678 18.5303 9.46967Z"
+              fill="#FFFFFF"
+            />
+          </svg>
+        </button>
       </div>
 
       <!-- Search for Tools -->
@@ -317,9 +332,33 @@
           <!-- Links will be dynamically added here -->
         </ul>
       </div>
+      <!--Container for image carousel and buttons-->
 
       <div class="carousel mx-auto w-full md:w-2/3 mb-8">
         <!-- Carousel images will be dynamically added here -->
+      </div>
+      <div class="text-center items-center mx-auto">
+        <!--Previous button for image carousel-->
+        <button
+          id="previous"
+          class="prev bg-gray-800 text-white p-2 rounded-lg shadow-lg"
+        >
+          Previous
+        </button>
+        <!--Play/Pause button for image carousel-->
+        <button
+          id="play"
+          class="play bg-gray-800 text-white p-2 rounded-lg shadow-lg"
+        >
+          Pause
+        </button>
+        <!--Next button for image carousel-->
+        <button
+          id="next"
+          class="next bg-gray-800 text-white p-2 rounded-lg shadow-lg"
+        >
+          Next
+        </button>
       </div>
     </div>
   </body>
